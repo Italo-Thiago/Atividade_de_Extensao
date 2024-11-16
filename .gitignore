@@ -1,0 +1,12 @@
+# Warnings
+Front-End/.gitignore
+Front-End/README.md
+Front-End/eslint.config.js
+Front-End/index.html
+Front-End/package.json
+Front-End/src/App.css
+Front-End/src/App.jsx
+Front-End/src/index.css
+Front-End/src/main.jsx
+Front-End/src/index.css
+Front-End/vite.config.js
