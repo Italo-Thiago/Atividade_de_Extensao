@@ -10,3 +10,6 @@ Front-End/src/index.css
 Front-End/src/main.jsx
 Front-End/src/index.css
 Front-End/vite.config.js
+Front-End/package-lock.json
+Front-End/postcss.config.js
+Front-End/tailwind.config.js
