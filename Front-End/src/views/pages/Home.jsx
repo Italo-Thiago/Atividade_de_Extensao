@@ -1,7 +1,9 @@
+import HeroImage from "../components/HeroImage"
+
 function Home() {
     return (
         <>
-            <h1>Home</h1>
+            <HeroImage />
         </>
     )
 }
