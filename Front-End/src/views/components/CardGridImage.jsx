@@ -20,7 +20,7 @@ export const CardGridImage = () => {
             </div>
 
             {/* Grid de Cards */}
-            <div className="flex flex-wrap content-between h-[357px] items-center w-full gap-8">
+            <div className="flex flex-wrap content-between h-1/2 items-center w-full gap-8">
                 <Card 
                     imageUrl={boloImage}
                     title="Bolo"

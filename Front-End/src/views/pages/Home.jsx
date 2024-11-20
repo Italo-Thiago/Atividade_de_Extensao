@@ -1,4 +1,5 @@
 import { CardGridImage } from "../components/CardGridImage"
+import { HeroBasic } from "../components/HeroBasic"
 import HeroImage from "../components/HeroImage"
 import { PainelImageContent } from "../components/PainelImageContent"
 
@@ -8,6 +9,7 @@ function Home() {
             <HeroImage />
             <PainelImageContent />
             <CardGridImage />
+            <HeroBasic />
         </>
     )
 }
