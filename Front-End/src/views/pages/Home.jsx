@@ -7,6 +7,7 @@ import { Maps } from "../components/Maps"
 import { PainelImageContent } from "../components/PainelImageContent"
 
 export const Home = () => {
+    
     return (
         <>
             <HeroImage />

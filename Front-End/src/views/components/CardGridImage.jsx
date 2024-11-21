@@ -1,31 +1,10 @@
 import PropTypes from "prop-types";
-
-import boloImage from "../../assets/images/Bolo.webp";
-import boloDePoteImage from "../../assets/images/Bolo_de_Pote.webp";
-import coxinhaImage from "../../assets/images/Coxinha.webp";
-
 import { Card } from "./Card";
+import { getCardData } from "../../models/features/CardDataModel";
 
 export const CardGridImage = ({ maxCards }) => {
     // Array de dados dos cards
-    const cardData = [
-        {
-            imageUrl: boloImage,
-            title: "Bolo",
-            description: "Isso e um bolo",
-        },
-        {
-            imageUrl: boloDePoteImage,
-            title:"Bolo de Pote",
-            description:"Isso e um bolo de pote",
-        },
-        {
-            imageUrl: coxinhaImage,
-            title:"Coxinha",
-            description:"Isso e uma coxinha",
-        },
-        // Adicione mais cards aqui, se necesssário
-    ]        
+    const cardData = getCardData();
 
     // Limita o número de cards com base em maxCards
     const limitedCardData = cardData.slice(0, maxCards);
