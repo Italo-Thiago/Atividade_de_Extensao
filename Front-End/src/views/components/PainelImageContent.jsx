@@ -33,7 +33,7 @@ export const PainelImageContent = () => {
             </div>
 
             {/* Imagem ao lado */}
-            <div className="relative w-1/2 h-96 bg-white bg-cover bg-center"/>
+            <div className="relative w-1/2 h-96 bg-white bg-cover bg-center rounded-lg border"/>
         </div>
     );
 };

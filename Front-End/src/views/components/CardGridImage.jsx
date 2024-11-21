@@ -1,10 +1,35 @@
+import PropTypes from "prop-types";
+
 import boloImage from "../../assets/images/Bolo.webp";
 import boloDePoteImage from "../../assets/images/Bolo_de_Pote.webp";
 import coxinhaImage from "../../assets/images/Coxinha.webp";
 
 import { Card } from "./Card";
 
-export const CardGridImage = () => {
+export const CardGridImage = ({ maxCards }) => {
+    // Array de dados dos cards
+    const cardData = [
+        {
+            imageUrl: boloImage,
+            title: "Bolo",
+            description: "Isso e um bolo",
+        },
+        {
+            imageUrl: boloDePoteImage,
+            title:"Bolo de Pote",
+            description:"Isso e um bolo de pote",
+        },
+        {
+            imageUrl: coxinhaImage,
+            title:"Coxinha",
+            description:"Isso e uma coxinha",
+        },
+        // Adicione mais cards aqui, se necesssário
+    ]        
+
+    // Limita o número de cards com base em maxCards
+    const limitedCardData = cardData.slice(0, maxCards);
+
     return (
         // Container Principal
         <div className="flex flex-col w-full items-start gap-8 p-16 bg-gray-100">
@@ -21,22 +46,23 @@ export const CardGridImage = () => {
 
             {/* Grid de Cards */}
             <div className="flex flex-wrap content-between h-1/2 items-center w-full gap-8">
-                <Card 
-                    imageUrl={boloImage}
-                    title="Bolo"
-                    description="Isso e um bolo"
-                />
-                <Card 
-                    imageUrl={boloDePoteImage}
-                    title="Bolo de Pote"
-                    description="Isso e um bolo de pote"
-                />
-                <Card 
-                    imageUrl={coxinhaImage}
-                    title="Coxinha"
-                    description="Isso e uma coxinha"
-                />
+                {limitedCardData.map((card, index) => (
+                    <Card
+                        key={index}
+                        imageUrl={card.imageUrl}
+                        title={card.description}
+                        description={card.description}
+                    />
+                ))}
             </div>
         </div>
     );
 };
+
+CardGridImage.propTypes = {
+    maxCards: PropTypes.number, 
+}
+
+CardGridImage.defaultProps = {
+    maxCards: 3, // Valor padrão para maxCards
+}

@@ -1,21 +1,23 @@
 import { CardGridImage } from "../components/CardGridImage"
+import { DeveloperTo } from "../components/DeveloperTo"
 import { Footer } from "../components/Footer"
 import { HeroBasic } from "../components/HeroBasic"
 import HeroImage from "../components/HeroImage"
 import { Maps } from "../components/Maps"
 import { PainelImageContent } from "../components/PainelImageContent"
 
-function Home() {
+export const Home = () => {
     return (
         <>
             <HeroImage />
             <PainelImageContent />
-            <CardGridImage />
+            <CardGridImage maxCards={3}/>
             <HeroBasic />
             <Maps />
             <Footer />
+            <DeveloperTo />
         </>
     )
 }
 
-export default Home
+export default Home;

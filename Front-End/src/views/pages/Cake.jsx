@@ -1,10 +1,13 @@
-function Cake() {
+import { DeveloperTo } from "../components/DeveloperTo"
+import { Footer } from "../components/Footer"
+
+export const Cake = () => {
     return (
         <>
-            <h1>Cake</h1>
-            <p>kajdlskfjla</p>
+            <Footer />
+            <DeveloperTo />
         </>
-    )
-}
+    );
+};
 
-export default Cake
+export default Cake;
