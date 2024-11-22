@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/Logo_I.webp"
 
 // TODO: Fazer com que ao clicar nos links Preços, Localização e Contato o usuário seja redirecionado para a Página Home, e para os respectivos componentes
+
+// TODO: Remover Quem somos e colocar o link no logo
 
 function NavBar() {
     return (
@@ -8,11 +11,11 @@ function NavBar() {
             {/* Cabeçalho e Navegação */}
             <header className="box-border flex items-center justify-between px-8 py-4 bg-white border-b border-gray-300 w-full h-[99px]">
                 {/* Logo */}
-                <div className="flex items-center">
+                <div className="flex items-center pr-8">
                     <img 
-                        src="https://via.placeholder.com/50"
+                        src={logo}
                         alt="Logo"
-                        className="h-8 w-8"
+                        className="h-16 w-16"
                         />
                 </div>
 
